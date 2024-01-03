@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="search_box">
+            <i class='bx bxs-map'></i>
+            <input id="searchInput" type="text" placeholder="Search location ">
+            <button id="searchBtn" class="bx bx-search"></button>
+        </div>
+
+        <p class="city_hide">city hide</p>
+
+        <div class="weather_box">
+            <div class="box">
+                <div class="info_weather">
+                    <div class="weather">
+                        <img src="assets/images/cloud.png">
+                        <p class="temperature">0<span>°C</span></p>
+                        <p class="description">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather_details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info_humidity">
+                        <span>0 %</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info_wind">
+                        <span>0 Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="not_found">
+            <div class="box">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/767/255/original/rain-umbrella-black-and-white-error-404-animation-protection-weather-rainy-error-message-gif-motion-graphic-autumn-umbrella-raindrops-falling-animated-object-linear-4k-isolated-on-white-video.jpg">
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./assets/index.js"></script>
+</body>
+</html>
